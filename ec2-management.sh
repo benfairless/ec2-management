@@ -9,7 +9,7 @@ start-ec2(){
     echo "No instances are currently stopped for project $PROJECT"
   else
     echo "Starting Amazon instances for project $PROJECT..."
-    #ec2-start-instances $INSTANCES
+    ec2-start-instances $INSTANCES
     echo -e "The following instances have been started:"
     instance-names $INSTANCES
   fi
