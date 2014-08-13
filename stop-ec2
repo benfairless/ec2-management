@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-. ./functions
-
-stop-ec2 $1

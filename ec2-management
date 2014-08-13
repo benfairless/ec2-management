@@ -46,3 +46,9 @@ instance-names(){
     echo "[$INSTANCE] $NAME"
   done
 }
+
+case $1 in
+  "off") stop-ec2 $2 ;;
+   "on") start-ec2 $2 ;;
+      *) echo "Options are off/on"; exit 1 ;;
+esac

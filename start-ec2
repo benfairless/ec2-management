@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-. ./functions
-
-start-ec2 $1
