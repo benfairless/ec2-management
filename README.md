@@ -14,22 +14,22 @@ Control the power state of EC2 instances tagged with *Project*.
 
 **Start all instances for a project**
 ```shell
-$ ./ec2-management.sh start P001
+$ ./ec2-management.sh on P001
 ```
 
 **Stop all instances for a project**
 ```shell
-$ ./ec2-management.sh stop P001
+$ ./ec2-management.sh off P001
 ```
 
 ## Cron examples
 
 **Start all instances at 07:00 Monday-Friday**
 ```shell
-0 7 * * 1,2,3,4,5 $PATH_TO_EC2_MANAGEMENT/ec2-management.sh start P001
+0 7 * * 1,2,3,4,5 $PATH_TO_EC2_MANAGEMENT/ec2-management.sh on P001
 ```
 
 **Stop all instances at 19:00 Monday-Friday**
 ```shell
-0 19 * * 1,2,3,4,5 $PATH_TO_EC2_MANAGEMENT/ec2-management.sh stop P001
+0 19 * * 1,2,3,4,5 $PATH_TO_EC2_MANAGEMENT/ec2-management.sh off P001
 ```
